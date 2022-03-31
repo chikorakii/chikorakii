@@ -91,7 +91,7 @@ h1 {
 }
 .socials { 
   color: rgba(var(--violet), 1)!important; 
-  font-size: 45px;
+  font-size: 30px;
   text-align: center;
 }
 .socials a, .socials a:active, .socials a:visited { 
