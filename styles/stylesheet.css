@@ -9,13 +9,13 @@ html {
    --violet: 143, 5, 149; 
   --plum: 81, 0, 130; 
   --light: 191, 116, 194; 
-  background: rgb((--plum));
-  background: linear-gradient(0deg, rgba((--plum),1) 0%, rgba((--violet),1) 100%);
+  background: rgb(var(--plum));
+  background: linear-gradient(0deg, rgba(var(--plum),1) 0%, rgba(var(--violet),1) 100%);
 }
 
 body { 
   width: 450px; 
   padding: 35px; 
   margin: 20px auto; 
-  background: rgba((--light), 1); 
+  background: rgba(var(--light), 1); 
 }
