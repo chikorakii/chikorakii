@@ -96,6 +96,7 @@ h1 {
 }
 .socials a, .socials a:active, .socials a:visited { 
   color: #fff; 
+  margin: 0px 4px; 
   transition: all .2s ease;
 }
 .socials a:hover {
