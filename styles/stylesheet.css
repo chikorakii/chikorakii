@@ -1,22 +1,114 @@
 /*********************************
-
   CHIKORAKII STYLESHEET 
   MARCH 31, 2022
-
 *********************************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mulish:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 html { 
-   --violet: 143, 5, 149; 
+  --violet: 143, 5, 149; 
   --plum: 81, 0, 130; 
   --light: 191, 116, 194; 
   background: rgb(var(--plum));
   background: linear-gradient(0deg, rgba(var(--plum),1) 0%, rgba(var(--violet),1) 100%);
+  background-attachment: fixed;
+  font-family: Mulish, sans-serif;
   height: 100%;
 }
 
 body { 
-  width: 450px; 
-  padding: 35px; 
-  margin: 20px auto; 
   background: rgba(var(--light), 1); 
+  font-size: 14px;
+  margin: 20px auto; 
+  width: 700px; 
+}
+
+h1 {
+  background: -webkit-linear-gradient(rgba(var(--plum),1), rgba(var(--violet),1));
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -o-background-clip: text;
+  -o-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: 900 30px Mulish;
+  margin: 0;
+  text-align:  center;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.parent {
+  align-content: flex-start;
+  display: flex; 
+  flex-flow: row wrap; 
+  justify-content: space-between; 
+  padding: 45px 40px;
+}
+
+.child  {
+  height: 400px; 
+  margin: auto;
+  width: 290px;
+  }
+.rockyimg {
+  width: 100%;
+}
+.rockyimg img {
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  width: 290px;
+}
+
+.chikoinfo {
+  display: block;
+  text-align: justify;
+  width: 100%;
+}
+
+
+.socials, .linkbox {
+  width: 100%;
+}
+.linkbox a, .linkbox a:visited, .linkbox a:active {
+  background: rgba(var(--plum),1);
+  border-radius: 11px;
+  color: #fff;
+  display: block;
+  font: 700 12px Mulish;
+  margin: 0 0 8px 0;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .2s ease;
+}
+
+.linkbox a:hover {
+  color: rgba(var(--light),1);
+}
+
+/* Large */
+.parent {
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .parent {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .parent {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
 }
