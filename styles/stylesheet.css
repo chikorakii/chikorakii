@@ -91,7 +91,9 @@ h1 {
 }
 .socials { 
   color: #FFF; 
+  font-size: 25px;
   text-align: center;
+
 }
 
 /* Large */
