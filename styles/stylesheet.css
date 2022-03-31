@@ -98,8 +98,8 @@ h1 {
   background: rgba(var(--plum), 1); 
   color: rgba(var(--light),1);
   margin: 0px 4px; 
-  width: 20px; height: 20px; text-align: center; 
-  line-height: 20px; 
+  width: 30px; height: 30px; text-align: center; 
+  line-height: 30px; 
   border: 1px dotted rgba(var(--violet),1); 
   border-radius: 10px;
   text-decoration: none;
