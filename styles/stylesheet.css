@@ -90,13 +90,14 @@ h1 {
   color: rgba(var(--light),1);
 }
 .socials { 
-  color: #FFF; 
+  color: rgba(var(--light), 1)!important; 
   font-size: 45px;
   text-align: center;
 }
 .socials a, .socials a:active, .socials a:visited { 
-  color: #fff; 
+  color: rgba(var(--light), 1)!important; 
   margin: 0px 4px; 
+  text-decoration: none;
   transition: all .2s ease;
 }
 .socials a:hover {
