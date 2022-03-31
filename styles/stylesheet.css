@@ -5,3 +5,11 @@
 
 *********************************/
 
+body { --violet: 143, 5, 149; --plum: 81, 0, 130; --light: 191, 116, 194; }
+
+body { 
+  width: 450px; 
+  padding: 35px; 
+  margin: 20px auto; 
+  background: rgba((--light), 1); 
+}
