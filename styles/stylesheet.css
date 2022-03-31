@@ -72,6 +72,7 @@ h1 {
 .socials, .linkbox {
   width: 100%;
 }
+
 .linkbox a, .linkbox a:visited, .linkbox a:active {
   background: rgba(var(--plum),1);
   border-radius: 11px;
@@ -87,6 +88,10 @@ h1 {
 
 .linkbox a:hover {
   color: rgba(var(--light),1);
+}
+.socials { 
+  color: #FFF; 
+  text-align: center;
 }
 
 /* Large */
