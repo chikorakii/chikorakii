@@ -91,9 +91,15 @@ h1 {
 }
 .socials { 
   color: #FFF; 
-  font-size: 25px;
+  font-size: 45px;
   text-align: center;
-
+}
+.socials a, .socials a:active, .socials a:visited { 
+  color: #fff; 
+  transition: all .2s ease;
+}
+.socials a:hover {
+  color: rgba(var(--plum),1); 
 }
 
 /* Large */
