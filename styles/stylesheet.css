@@ -255,11 +255,15 @@ h1 {
     padding: 5px;
 }
 
-.is-checked,
+
 .button:active,
 .button:hover {
-    background: rgba(var(--light), 1);
+    background: rgba(var(--violet), .75);
 }
+.is-checked {
+    background: rgba(var(--violet), .45);
+}
+  
 
 .album h3 {
     font: 700 12px Mulish;
