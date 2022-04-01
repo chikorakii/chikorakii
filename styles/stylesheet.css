@@ -225,7 +225,7 @@ h1 {
 }
 
 .owned img {
-    filter: blur(3px) sepia(.3);
+    filter: blur(2px) sepia(.3);
     transition: all .3s ease-in;
 }
 
