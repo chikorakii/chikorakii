@@ -180,3 +180,92 @@ overflow: auto;
   padding: 0px 5px;
   margin: 0 0 0;
 }
+
+html,
+body {
+    --violet: 143, 5, 149;
+    --plum: 81, 0, 130;
+    --light: 191, 116, 194;
+    height: 100%;
+}
+
+h1 {
+  background: linear-gradient(0deg, rgba(var(--plum),1), rgba(var(--violet),1));
+  background-clip: text;
+  -webkit-background-clip: text;
+   color: transparent;
+  font: 900 35px Mulish;
+  text-align:  center;
+}
+
+.grid {
+    align-content: space-between;
+    background: #EFEFEF;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+}
+.albumcontainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.album {
+    background: rgb(255, 255, 255);
+  margin: 10px;
+    text-align: center;
+  width: 170px;
+}
+
+.album img {
+    height: 140px;
+    padding: 15px;
+    width: 140px;
+}
+
+.owned img {
+    filter: blur(1px) sepia(.3);
+    transition: all .3s ease-in;
+}
+
+.owned:hover img {
+    filter: blur(0) sepia(0);
+     opacity: 1;
+}
+.album.iso { 
+  background: rgba(var(--light),.23);
+}
+
+.button-group {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  margin: 0 auto;
+    width: 80%;
+}
+
+.button {
+    background: rgba(var(--violet), 1);
+    border: 0;
+    border-radius: 5px;
+    color: #FFF;
+    margin: 5px 0px;
+    padding: 5px;
+}
+
+.is-checked,
+.button:active,
+.button:hover {
+    background: rgba(var(--light), 1);
+}
+
+.album h3 {
+    font: 700 12px Mulish;
+    margin: 0;
+    padding: 0 7px 7px;
+    text-align: center;
+    text-transform: uppercase;
+}
