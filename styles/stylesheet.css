@@ -18,6 +18,7 @@ body {
   background: rgba(var(--light), 1); 
   font-size: 14px;
   margin: 20px auto; 
+  height: auto;
   width: 700px; 
 }
 
