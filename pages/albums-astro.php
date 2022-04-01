@@ -6,6 +6,8 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script type="text/javascript" src="https://chikorakii.github.io/chikorakii/styles/isotope-filters.js"></script>
+
 </head>
 
 <body>
