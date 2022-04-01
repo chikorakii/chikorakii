@@ -1,4 +1,4 @@
-<script>
+
 // init Isotope
 var $grid = $('.grid').isotope({
     itemSelector: '.album',
@@ -34,4 +34,3 @@ $('.button-group').each(function(i, buttonGroup) {
         $(this).addClass('is-checked');
     });
 });
-</script>
