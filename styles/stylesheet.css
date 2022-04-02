@@ -22,6 +22,14 @@ html, body {
 	padding-bottom: 20px;
 }
 
+.backkground-sort { 
+  background: rgba(var(--light), 1); 
+  font-size: 14px;
+  margin: 20px auto; 
+  width: 75%; 
+	padding-bottom: 20px;
+}
+
 h1 {
   background: -webkit-linear-gradient(rgba(var(--plum),1), rgba(var(--violet),1));
   -moz-background-clip: text;
