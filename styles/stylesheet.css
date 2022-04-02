@@ -140,7 +140,7 @@ h1 {
     /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
   }
-  .backkground { 
+  .backkground-sort, .backkground { 
   width: 400px; 
 }
 
