@@ -8,6 +8,25 @@ html, body {
   --violet: 143, 5, 149; 
   --plum: 81, 0, 130; 
   --light: 191, 116, 194; 
+  --dream02: 204, 212, 216;
+  --riseup: 168, 132, 181;
+  --mysticblue: 149,179,228;
+  --springup:231,217,71;
+  --summervibes: 45,78,201;
+  --autumnstory: 168,40,31;
+  --winterdream: 195, 198, 191;
+  --dream01: 169, 223, 251;
+  --alllight: 44,63,48;
+  --blueflame: 64,88,158;
+  --oao: 198,193,219;
+  --gateway: 146,174,215;
+  --allyours: 161,58,62;
+  --switchon: 72,107,157;
+  --restore: 154,195,74;
+  --happyvirus: 227,119,31;
+  --tbop: 64,109,70;
+  --sn: 216,174,64;
+  --tcsau: 147,166,200;
   background: rgb(var(--plum));
   background: linear-gradient(0deg, rgba(var(--plum),1) 0%, rgba(var(--violet),1) 100%);
   background-attachment: fixed;
@@ -158,61 +177,6 @@ h1 {
 
 }
 
-
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  background-color: rgba(var(--light),1);
-  padding: 10px 0 10px;
-  display: flex;
-  flex-flow: row wrap;
-  align-content: space-between;
-  justify-content: space-between;
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: rgba(var(--violet),1);
-  color: #fff;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  margin: 0 35px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  opacity: .8;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: rgba(var(--plum),1);
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 0;
-  height: 230px;
-}
-.scroller { 
-height: 210px;
-overflow: auto;
-  padding: 0px 5px;
-  margin: 0 0 0;
-}
-
-html,
-body {
-    --violet: 143, 5, 149;
-    --plum: 81, 0, 130;
-    --light: 191, 116, 194;
-    height: 100%;
-}
-
 h1 {
   background: linear-gradient(0deg, rgba(var(--plum),1), rgba(var(--violet),1));
   background-clip: text;
@@ -221,6 +185,12 @@ h1 {
   font: 900 35px Mulish;
   text-align:  center;
 }
+
+
+
+/******************************** 
+  ALBUM COLLECTiON CSS 
+********************************/
 
 .grid {
     align-content: space-between;
@@ -295,6 +265,255 @@ h1 {
     padding: 0 7px 7px;
     text-align: center;
     text-transform: uppercase;
+}
+
+/******************************** 
+  PC COLLECTiON CSS 
+********************************/
+
+/* ---- button ---- */
+.labelholder {
+  display: flex; 
+  flex-flow: column wrap;
+  width: 100px;
+  float: left;
+}
+.button2 {
+  display: block;
+  background: rgba(var(--violet),1);
+  border-radius: 5px;
+  color: #fff;
+  margin: 4px 0;
+  font: 10px Mulish;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  width: 100%;
+  border: 0;
+  padding: 3px;
+}
+.release {
+    background: rgba(var(--plum),.8);
+}
+.button2:hover {
+  background-color: rgba(var(--plum),.9);
+}
+
+.button2:active,
+.button.is-checked {
+  background-color: rgba(var(--plum),1);
+}
+
+.button2.is-checked {
+  color: white;
+}
+
+/* ---- button-group ---- */
+
+.button-group2:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+
+/* ---- isotope ---- */
+
+.pcgrid {
+  background: rgba(255,255,255,0.3);
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 700px;
+}
+
+/* clear fix */
+.pcgrid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.photocard {
+  width: 60px;
+  height: 88px;
+  margin: 3px;
+  padding: 7px;
+  border-radius: 11px;
+  background: rgba(var(--violet),1);
+}
+
+.photocard > * {
+  margin: 0;
+  padding: 0;
+}
+.photocard img {
+  width: 60px; 
+  height: 88px; 
+  object-fit: cover; 
+  object-position: center; 
+  border-radius: 5px;
+  filter: sepia(.5);
+  transition: all .5s ease-in;
+}
+.photocard:hover img {
+    filter: sepia(0);
+}
+.photocard:hover .details {
+  opacity: 1;
+}
+.photocard .details {
+  width: 60px; height: 88px;
+  background: rgba(0,0,0,0.4);
+  position: absolute; 
+  border-radius: 5px;
+  top: 7px; 
+  opacity: 0;
+  transition: all 0.2s ease-in 1s;
+  text-align: center;
+}
+
+.photocard q {
+  font: 8px Mulish;
+  display: inline-block;
+  background: rgba(var(--light),1);
+  color: #fff;
+  padding: 3px;
+  border-radius: 2px;
+  margin: -1px;
+  text-transform: uppercase; 
+  letter-spacing: -.5px;
+}
+.photocard q:before, .photocard q:after {
+  content: '';
+}
+
+.photocard .type, .photocard .year {
+  display: none;
+}
+
+.photocard.spring { 
+  background: rgba(var(--springup),1); 
+}
+.photocard.summer  { 
+  background: rgba(var(--summervibes),1); 
+}
+.photocard.autumn { 
+  background: rgba(var(--autumnstory),1); 
+}
+.photocard.winter { 
+  background: rgba(var(--winterdream),1); 
+}
+.photocard.dream01 { 
+  background: rgba(var(--dream01),1); 
+}
+.photocard.dream02 { 
+  background: rgba(var(--dream02),1); 
+}
+.photocard.riseup { 
+  background: rgba(var(--riseup),1); 
+}
+.photocard.venus { 
+  background: SlateGrey; 
+}
+.photocard.blueflame { 
+  background: rgba(var(--blueflame),1); 
+}
+.photocard.oneonly { 
+  background: rgba(var(--oao),1); 
+}
+.photocard.gateway {
+  background: rgba(var(--gateway),1);
+}
+.photocard.alllight {
+  background: rgba(var(--alllight),1); 
+}
+.photocard.allyours {
+  background: rgba(var(--allyours),1); 
+}
+.photocard.switchon {
+  background: rgba(var(--switchon)); 
+}
+.photocard.hv {
+  background: rgba(var(--happyvirus),1); 
+}
+.photocard.restore {
+  background: rgba(var(--restore),1); 
+}
+.photocard.tbop {
+  background: rgba(var(--tbop),1); 
+}
+.photocard.snowy {
+  background-color: rgba(var(--sn),1);
+}
+.photocard.tcsau {
+  background-color: rgba(var(--tcsau),1);
+}
+.photocard.owned img { 
+  filter: grayscale(1) blur(2px);
+  transition: all 0.2s eas-in;
+}
+.photocard.owned:hover img { 
+  filter: grayscale(0) blur(0px);
+}
+.billlie1 {
+  background-color: rgba(var(--mysticblue),1);
+}
+.billlie {
+  background-color: rgba(var(--mysticblue),.5);
+}
+
+
+/***********************
+    TABS 
+************************/ 
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: rgba(var(--light),1);
+  padding: 10px 0 10px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: rgba(var(--violet),1);
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  margin: 0 35px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  opacity: .8;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgba(var(--plum),1);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 0;
+  height: 230px;
+}
+.scroller { 
+height: 210px;
+overflow: auto;
+  padding: 0px 5px;
+  margin: 0 0 0;
 }
 
 .tabbed {
