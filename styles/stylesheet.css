@@ -260,6 +260,13 @@ h1 {
   border: 0;
   padding: 3px;
 }
+.billlie1 {
+  background-color: rgba(var(--mysticblue),1);
+}
+.billlie {
+  background-color: rgba(var(--mysticblue),.5);
+}
+
 .release {
     background: rgba(var(--plum),.8);
 }
@@ -268,8 +275,8 @@ h1 {
 }
 
 .button2:active,
-.button.is-checked {
-  background-color: rgba(var(--plum),1);
+.button2.is-checked {
+  background-color: rgba(var(--plum),1)
 }
 
 .button2.is-checked {
@@ -347,6 +354,7 @@ h1 {
 .photocard q {
   font: 8px Mulish;
   display: inline-block;
+  box-decoration-break: clone;
   background: rgba(var(--light),1);
   color: #fff;
   padding: 3px;
@@ -426,12 +434,6 @@ h1 {
 }
 .photocard.owned:hover img { 
   filter: grayscale(0) blur(0px);
-}
-.billlie1 {
-  background-color: rgba(var(--mysticblue),1);
-}
-.billlie {
-  background-color: rgba(var(--mysticblue),.5);
 }
 
 
