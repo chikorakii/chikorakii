@@ -342,6 +342,7 @@ h1 {
   padding: 7px;
   border-radius: 11px;
   background: rgba(var(--violet),1);
+  position: relative; 
 }
 
 .photocard > * {
