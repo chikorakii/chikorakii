@@ -96,7 +96,7 @@ h1 {
 }
 
 
-.socials, .linkbox {
+.socials {
   width: 100%;
 }
 
@@ -106,8 +106,8 @@ h1 {
   color: #fff;
   display: block;
   font: 700 12px Mulish;
-  margin: 0 0 8px 0;
-  padding: 10px;
+  margin: 0 4px 4px 0;
+  padding: 6px;
   text-align: center;
   text-decoration: none;
   transition: all .2s ease;
