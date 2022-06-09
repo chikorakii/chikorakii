@@ -99,6 +99,11 @@ h1 {
 .socials {
   width: 100%;
 }
+.linkbox {
+	display: flex; 
+	flex-flow: row wrap; 
+	justify-content: space-evenly; 
+}
 
 .linkbox a, .linkbox a:visited, .linkbox a:active {
   background: rgba(var(--plum),1);
